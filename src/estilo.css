@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    padding: 1rem;
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    text-align: center;
+    color: #666;
+  }
+  
+  /* Estilo do formulário */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  form input, form button {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  form input:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+  }
+  
+  form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Lista de contatos */
+  .lista-contatos {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .lista-contatos li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+  }
+  
+  .lista-contatos li:hover {
+    background-color: #e9ecef;
+  }
+  
+  .lista-contatos li span {
+    flex: 1;
+    margin-right: 1rem;
+  }
+  
+  .lista-contatos li button {
+    padding: 0.5rem;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .lista-contatos li button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Barra de pesquisa */
+  .pesquisa {
+    margin-bottom: 1rem;
+  }
+  
+  .pesquisa input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .pesquisa input:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+  }
+  

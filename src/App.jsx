@@ -4,6 +4,7 @@ import { collection, getDocs } from "firebase/firestore";
 import ContatoForm from "./components/Contatoform";
 import ListaContatos from "./components/ListaContatos";
 import PesquisaContatos from "./components/PesquisaContatos";
+import "./estilo.css"
 
 function App() {
   const [contatos, setContatos] = useState([]);

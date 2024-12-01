@@ -5,7 +5,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Suas credenciais do Firebase (substitua pelas suas)
 const firebaseConfig = {
-   // apiKey: "AIzaSyB-GYvZ1Q0aVYKqvXg9hnkLh23E0n5clHo",
+    apiKey: "AIzaSyB-GYvZ1Q0aVYKqvXg9hnkLh23E0n5clHo",
     authDomain: "agenda-de-contatos-f2e73.firebaseapp.com",
     projectId: "agenda-de-contatos-f2e73",
     storageBucket: "agenda-de-contatos-f2e73.firebasestorage.app",

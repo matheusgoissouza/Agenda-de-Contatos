@@ -1,30 +1,29 @@
 /* Reset básico */
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+
   }
   
   body {
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #6fb0b3;
     line-height: 1.6;
   }
   
   .container {
     padding: 1rem;
-    max-width: 600px;
+    max-width: 600;
     margin: auto;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
+
   h1 {
     text-align: center;
     font-size: 2rem;
-    color: #444;
+    color: #defeff;
     margin-bottom: 1rem;
   }
   
@@ -50,14 +49,14 @@
   
   form input:focus {
     outline: none;
-    border-color: #007BFF;
-    box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+    border-color: #defeff;
+    box-shadow: 0 0 4px #defeff;
   }
   
   form button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
+    background-color: #defeff;
+    color: 
+    border-radius: 10em;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }

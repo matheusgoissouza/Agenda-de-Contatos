@@ -6,7 +6,7 @@ function PesquisaContatos({ setFiltro }) {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setFiltro(searchTerm.trim());
-    }, 300); // Aguarda 300ms após a digitação
+    }, 300);
     return () => clearTimeout(timeout);
   }, [searchTerm, setFiltro]);
 
@@ -21,11 +21,10 @@ function PesquisaContatos({ setFiltro }) {
   };
 
   return (
-    <div style={{ marginBottom: "1rem", display: "flex", alignItems: "center" }}>
-      <input
-        style={{ flex: 1, marginRight: "0.5rem", padding: "0.5rem" }}
+    <div>
+      <input class="pesquisa-input"
         type="text"
-        placeholder="Pesquisar por nome ou email"
+        placeholder="Pesquisar"
         value={searchTerm}
         onChange={handleSearch}
         onKeyDown={handleKeyDown}
@@ -33,7 +32,6 @@ function PesquisaContatos({ setFiltro }) {
       />
       <button
         onClick={() => setSearchTerm("")}
-        style={{ padding: "0.5rem", cursor: "pointer" }}
       >
         Limpar
       </button>

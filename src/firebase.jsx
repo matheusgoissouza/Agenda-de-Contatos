@@ -1,9 +1,7 @@
-// src/firebase.js
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-// Suas credenciais do Firebase (substitua pelas suas)
 const firebaseConfig = {
     apiKey: "AIzaSyB-GYvZ1Q0aVYKqvXg9hnkLh23E0n5clHo",
     authDomain: "agenda-de-contatos-f2e73.firebaseapp.com",
@@ -14,10 +12,8 @@ const firebaseConfig = {
     measurementId: "G-1RM3Y0PN2K"
   };
 
-// Inicializa o Firebase
 const app = initializeApp(firebaseConfig);
 
-// Obter instâncias do Firebase Auth e Firestore
 const db = getFirestore(app);
 const auth = getAuth(app);
 

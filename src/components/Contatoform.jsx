@@ -72,7 +72,7 @@ function ContatoForm({ contatoAtual, setContatos, setContatoAtual }) {
         required
       />
       <button type="submit" disabled={loading}>
-        {loading ? "Salvando..." : contatoAtual ? "Atualizar" : "Adicionar"} Contato
+        {loading ? "Salvando..." : contatoAtual ? "Atualizar" : "Adicionar"} 
       </button>
     </form>
   );

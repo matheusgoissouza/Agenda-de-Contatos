@@ -22,7 +22,8 @@ function PesquisaContatos({ setFiltro }) {
 
   return (
     <div>
-      <input class="pesquisa-input"
+      <input
+        className="pesquisa-input"
         type="text"
         placeholder="Pesquisar"
         value={searchTerm}
@@ -30,11 +31,14 @@ function PesquisaContatos({ setFiltro }) {
         onKeyDown={handleKeyDown}
         aria-label="Pesquisar contatos"
       />
-      <button
-        onClick={() => setSearchTerm("")}
-      >
-        Limpar
-      </button>
+      {searchTerm && (
+        <button
+          onClick={() => setSearchTerm("")}
+          aria-label="Limpar pesquisa"
+        >
+          Limpar
+        </button>
+      )}
     </div>
   );
 }
